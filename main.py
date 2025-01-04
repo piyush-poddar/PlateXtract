@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 import util
 from streamlit import secrets
-import requests
+import gdown
 
 #os.environ['api_key']
 #API_KEY = os.environ['api_key']
@@ -18,14 +18,13 @@ class_names_path = os.path.join('.', 'model', 'class.names')
 input_dir = os.path.join('.', 'images')
 
 # You can yourself download the weights from the link below and place it in the weights folder
-# Otherwise, the weights will be downloaded automatically
+# Otherwise, the weights will be downloaded automatically but first time it will take some time
 if not os.path.exists(model_weights_path):
-    url = "https://drive.google.com/file/d/1Qlcv7vcyWn9UsKsjqHat4V_CuVh5Lggs/view?usp=drive_link"
-    response = requests.get(url)
-    with open(model_weights_path, "wb") as f:
-        f.write(response.content)
+    model_weights_url = "https://drive.google.com/uc?id=1Qlcv7vcyWn9UsKsjqHat4V_CuVh5Lggs"
+    gdown.download(model_weights_url, model_weights_path)
 else:
-    print("Weights already exist")
+    print("model.weights already exists")
+
 
 def extract_number_plate(img_path):
 

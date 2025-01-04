@@ -18,7 +18,7 @@ if File:
     if os.path.exists(image_path):
         st.success("Image uploaded successfully")
     
-    st.image(image_path, width=300)
+    st.image(image_path, width=500)
 
     if (st.button("Extract Text")):
         st.subheader(f"Number Plate Text: {extract_text_from_image(image_path)}")

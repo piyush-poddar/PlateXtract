@@ -1,12 +1,15 @@
 altair==5.5.0
 annotated-types==0.7.0
 attrs==24.3.0
+beautifulsoup4==4.12.3
 blinker==1.9.0
 cachetools==5.5.0
 certifi==2024.12.14
 charset-normalizer==3.4.1
 click==8.1.8
 colorama==0.4.6
+filelock==3.16.1
+gdown==5.2.0
 gitdb==4.0.12
 GitPython==3.1.44
 google-ai-generativelanguage==0.6.10
@@ -28,7 +31,7 @@ MarkupSafe==3.0.2
 mdurl==0.1.2
 narwhals==1.20.1
 numpy==2.2.1
-opencv-python-headless==4.10.0.84
+opencv-python==4.10.0.84
 packaging==24.2
 pandas==2.2.3
 pillow==11.1.0
@@ -42,6 +45,7 @@ pydantic_core==2.27.2
 pydeck==0.9.1
 Pygments==2.18.0
 pyparsing==3.2.1
+PySocks==1.7.1
 python-dateutil==2.9.0.post0
 pytz==2024.2
 referencing==0.35.1
@@ -51,6 +55,7 @@ rpds-py==0.22.3
 rsa==4.9
 six==1.17.0
 smmap==5.0.2
+soupsieve==2.6
 streamlit==1.41.1
 tenacity==9.0.0
 toml==0.10.2
