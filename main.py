@@ -24,6 +24,8 @@ if not os.path.exists(model_weights_path):
     response = requests.get(url)
     with open(model_weights_path, "wb") as f:
         f.write(response.content)
+else:
+    print("Weights already exist")
 
 def extract_number_plate(img_path):
 
