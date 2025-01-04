@@ -4,10 +4,11 @@ from google.generativeai.types import HarmCategory, HarmBlockThreshold
 import cv2
 import numpy as np
 import util
+from streamlit import secrets
 
 #os.environ['api_key']
 #API_KEY = os.environ['api_key']
-genai.configure(api_key='YOUR_API_KEY')
+genai.configure(api_key=secrets["GEMINI_API_KEY"])
 
 model_cfg_path = os.path.join('.', 'model', 'cfg', 'darknet-yolov3.cfg')
 model_weights_path = os.path.join('.', 'model', 'weights', 'model.weights')
