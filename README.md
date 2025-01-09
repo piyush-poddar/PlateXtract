@@ -1,6 +1,6 @@
 # PlateXtract
 
-Extract text from vehicle number plates with ease and over 99% accuracy.
+Extract text from vehicle number plates with ease and over 98% accuracy.
 
 The application is already deployed on Streamlit. Check it out here **https://platextract.streamlit.app**
 
