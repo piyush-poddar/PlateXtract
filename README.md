@@ -26,11 +26,13 @@ You can try PlateXtract live on Streamlit:
 
 - **Python** - Backend processing
  
-- **YOLOv Model** - License plate detection
+- **YOLOv3 Model** - License plate detection
  
 - **Google Gemini API** - OCR for text extraction
  
 - **OpenCV** - Image processing
+
+- **Streamlit** - User Interface
 
 ## 🚀 Installation
 
